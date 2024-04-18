@@ -238,3 +238,28 @@ curl "https://api.mapbox.com/tokens/v2/MAPBOX_USERNAME_HERE?access_token=YOUR_MA
 * [Project Blacklist3r - November 23, 2018 - @notsosecure](https://www.notsosecure.com/project-blacklist3r/)
 * [Saying Goodbye to my Favorite 5 Minute P1 - Allyson O'Malley - January 6, 2020](https://www.allysonomalley.com/2020/01/06/saying-goodbye-to-my-favorite-5-minute-p1/)
 * [Mapbox API Token Documentation](https://docs.mapbox.com/help/troubleshooting/how-to-use-mapbox-securely/)
+//The information provided outlines various aspects of API key leaks, including tools for finding leaked keys and potential exploits associated with different services. Here's an explanation of the key points:
+
+1. **API Key Leaks**: API keys are unique identifiers used to authenticate requests within a project. Leaking these keys can lead to unauthorized access and potential misuse of services.
+
+2. **Exploit Summary**: The summary lists different tools and techniques to exploit leaked API keys for various services like Google Maps, Algolia, Slack, Facebook, GitHub, Twilio, Twitter, GitLab, HockeyApp, IIS Machine Keys, and Mapbox.
+
+3. **Tools**:
+   - **KeyFinder**: Finds keys while browsing the web.
+   - **keyhacks**: Checks if leaked API keys are valid.
+   - **truffleHog**: Finds credentials across various locations.
+   - **trivy**: Scans for vulnerabilities, including API key leaks.
+   - **nuclei-templates**: Tests API tokens against multiple service endpoints.
+   - **badsecrets**: Detects known or weak secrets.
+   - **secrets-patterns-db**: Database for detecting secrets, API keys, passwords, etc.
+
+4. **Exploit Examples**:
+   - Exploiting Google Maps API for unauthorized usage or denial of service attacks.
+   - Manipulating settings in Algolia using leaked keys.
+   - Testing Slack, Facebook, GitHub, Twilio, Twitter, GitLab, HockeyApp APIs for authentication and data access.
+   - Understanding the importance of IIS Machine Keys in authentication and encryption.
+   - Identifying and using Mapbox API tokens, especially Secret Tokens (`sk`).
+
+5. **References**: Links to articles, projects, and documentation for further understanding and research on API key leaks and related security issues.
+
+Overall, the content provides a comprehensive overview of API key security risks, detection tools, and potential exploits that can occur if these keys are leaked or mishandled.
